@@ -1,15 +1,43 @@
+//=================Teacher Assignment==============
+// var age=19;
 
-var age=16;
+// var per='no';
 
-var per='no';
+// var cnic='yes'
 
-var cnic='have it'
+// if ((age >= 15 && per=="yes") || (cnic=="yes") ){
+//     console.log('yu have entered')
 
-if ((age >= 15 && per=="yes") || (cnic=="have it") ){
-    console.log('yu have entered')
+// }
+// else
+// {
+//     console.log("you are not allowed")
+// }
+//====================Arrey===================================
 
-}
-else
-{
-    console.log("you are not allowed")
-}
+
+var fName = ['shehla','sadia','hina','Aisha','Mariam','sahar'];
+
+    console.log(fName)
+
+fName.push('samreen');
+
+    console.log(fName);
+
+fName.push('Farheen');
+
+    console.log(fName);
+    
+    fName.pop();
+    console.log(fName)
+
+
+
+
+
+
+
+
+
+
+
