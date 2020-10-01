@@ -1,0 +1,22 @@
+.trColor{
+    background-color: #f4511e;
+}
+
+.h2{
+    transform: uppercase    ;
+    color: #81818;
+    margin-bottom: 30px;
+}
+
+
+.p{
+    font: 400 15px lato, sans-sarif;
+}
+
+
+
+.fa-signal , .fa-globe{
+color: red;
+font-size: 200px !important;
+
+}
