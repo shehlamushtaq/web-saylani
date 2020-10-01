@@ -15,8 +15,23 @@
 
 
 
-.fa-signal , .fa-globe{
+.fa-signal , .fa-globe , .fa-power-off{
 color: red;
 font-size: 200px !important;
 
 }
+
+ .fa-power-off , .fa-heart {
+    color: red;
+    font-size: 50px !important;
+    
+    }
+    
+
+
+
+.align{
+  margin: auto;
+  text-align: center;
+}
+
