@@ -93,28 +93,34 @@
 
 // //=============================================================================
 
-var names = ['shehla' , 'hina' , 'aisha' , 'sadia' , 'mehwish' , 'sumera' , 'mariam']
+// var names = ['shehla' , 'hina' , 'aisha' , 'sadia' , 'mehwish' , 'sumera' , 'mariam']
 
-var yourName = prompt(`Enter your name for searching`);
+// var yourName = prompt(`Enter your name for searching`);
 
-var found = false;
+// var found = false;
 
-for (var i=0 ; i<names.length ; i++ ){
+// for (var i=0 ; i<names.length ; i++ ){
 
-    if ( yourName === names[i]){
+//     if ( yourName === names[i]){
         
-        found = true;
-        break
-    }  
-}
+//         found = true;
+//         break
+//     }  
+// }
 
 
-if (found){
-    console.log("Found Your Name")
-} else {
-    console.log("Not Found")
-}
+// if (found){
+//     console.log("Found Your Name")
+// } else {
+//     console.log("Not Found")
+// }
 
 //==============================================================
 
 
+var courses = []
+for(var i = 1; i<=5; i++ ) {
+        courses[i] = prompt(`enter 5 names of courses 
+        course No ${i}`)
+}
+console.log(courses)
