@@ -380,40 +380,97 @@ var country = ["Afghanistan","Albania","Algeria","Andorra","Angola",
 // }
 
 //count of voweles=============================================
-var name = "shehla mushtaq";
-console.log(findVowel(name))
+// var name = "shehla mushtaq";
+// console.log(findVowel(name))
 
-        ind = str.indexOf(name, start);
+//         ind = str.indexOf(name, start);
 
-        if (ind != -1) {
-            count++;
-            start = ind + searchItemLength;
-        } else {
-            break;
-        }
+//         if (ind != -1) {
+//             count++;
+//             start = ind + searchItemLength;
+//         } else {
+//             break;
+//         }
 
-function findVowel(str){
-    var count = 0;
-    var nstr;
-    for (var i=0; i<str.length; i++){
-        nstr = str.charAt(i).toLowerCase()
-        if (nstr=="a" || nstr=="e" || nstr=="i" || nstr=="o" ||nstr =="u"){
-            count++
-        }
-    }
-    return count
+// function findVowel(str){
+//     var count = 0;
+//     var nstr;
+//     for (var i=0; i<str.length; i++){
+//         nstr = str.charAt(i).toLowerCase()
+//         if (nstr=="a" || nstr=="e" || nstr=="i" || nstr=="o" ||nstr =="u"){
+//             count++
+//         }
+//     }
+//     return count
 
+// }
+
+
+// }
+
+// var  str = " jump over the lazy dog the quick brown fox ";
+// console.log(str);
+// var strToReplace ; 
+// var replaceWith 
+// console.log(toReplace(str ,  "the quick brown fox" ,"the white cat" ));
+
+// function toReplace(str ,oldString, newString ){
+//     var oldIndex = str.indexOf(oldString);
+//     var lofOldStr = oldString.length
+// strToReplace = str.slice(oldIndex, lofOldStr )
+
+// var temp = str.replace(/strToReplace/g, newString);
+// return temp
+
+
+// }
+
+// var str = prompt("entre the sentence")
+// var newStr=findSpace(str)
+// console.log(newStr)
+// console.log(findExclamation(str))
+
+// function findSpace(sentence){
+//     var ind = sentence.indexOf("  ")
+//     if (ind !== -1){
+//     console.log(" oops double space found");
+//     }
+// }
+// function findExclamation(sentence){
+    
+//     var ind = sentence.indexOf("!")
+//     if (ind !== -1){
+//     console.log(" oops found sign of Exclamation found");
+// }
+// }
+// //==========================================
+
+
+
+// var input = +prompt('enter any number')
+// console.log( input)
+
+// var value = parseFloat(input)+1;
+
+// console.log( value);
+
+// fiver 3000 Rs/- cuts off 20%
+// var gigQuote = 3000 ;
+// var commission = 20
+//
+
+var input = +prompt('enter any number')
+var afterfloat = +prompt (' after decimal upto how much, enter the number')
+console.log( input+` , `+afterfloat)
+
+ format(input , afterfloat)
+
+
+
+function format (str , num){
+// var value = parseFloat(str);
+var formateNumber = str.toFixed(num);
+console.log("number after formate = "+ formateNumber )
 }
-
-
-}
-
-
-
-
-
-
-
-
 
 
