@@ -1,4 +1,4 @@
-// calculator=============================
+//calculator=============================
 
 // var first =parseInt( prompt(`ENTER YOUR FIRST NUMBER`));
 // var second  = parseInt( prompt(`ENTER YOUR SECOND NUMBER`));
@@ -351,9 +351,9 @@ var country = ["Afghanistan","Albania","Algeria","Andorra","Angola",
 //         arr2.push(element*2);
 //     }
 
-    var count = 0;
-    var start = 0;
-    var searchItemLength = name.length;
+    // var count = 0;
+    // var start = 0;
+    // var searchItemLength = name.length;
 
 // function doubleNum (arr) {
 //     var nArr = [];
@@ -363,20 +363,27 @@ var country = ["Afghanistan","Albania","Algeria","Andorra","Angola",
 //     }
 //     return nArr
 // }
-// ===========================Q1+++++++++++++++
+// ================================================================
+//Write a JavaScript function that accepts a string as a parameter and converts the first letter
+// of each word of the string in upper case.
+//=======================================================================
 
-// var name = "my name is shehla mushtaq";
+// var name = "she is my friend and her name is hina";
 // console.log(titlecase(name))
-// function titlecase(str) {
-     
-   
-//         var nstring = str.split(' ')
-//         for(var i=0; i<str.length; i++){
-//     //    nstring[i].toUpperCase()
-// var myname =    nstring(i)
-// var s =charAt(i).toUpperCase()
 
-//    }
+// function titlecase(str) {
+//         var nstring = str.split(' ')
+//         for(var i=0; i<nstring.length; i++){
+//             var myname = nstring[i]
+//             console.log(myname)
+//             var upString = myname.charAt(0).toUpperCase()
+//             var remaing = myname.slice(1,(myname.length))
+//         //    myname = myname.replace()
+//                 nstring[i] = upString+remaing
+                
+
+//         }
+//         return nstring.join(" ")
 // }
 
 //count of voweles=============================================
@@ -403,28 +410,30 @@ var country = ["Afghanistan","Albania","Algeria","Andorra","Angola",
 //     }
 //     return count
 
-// }
+// }}
+//=========================================================================================
+//16 write a program that serach the word "the brown fox" in the paragraph 
+//"the quick brown fox jumps over the lazy dog"
+// and replace it with "the white cat" use slice method and then make it with builtin function)
+//==========================================================================================
 
-
-// }
-
-// var  str = " jump over the lazy dog the quick brown fox ";
+// var  str = "  the quick brown fox  jump over the lazy dog   ";
 // console.log(str);
-// var strToReplace ; 
-// var replaceWith 
 // console.log(toReplace(str ,  "the quick brown fox" ,"the white cat" ));
 
 // function toReplace(str ,oldString, newString ){
-//     var oldIndex = str.indexOf(oldString);
-//     var lofOldStr = oldString.length
-// strToReplace = str.slice(oldIndex, lofOldStr )
+// //     var oldIndex = str.indexOf(oldString);
+// //     var lofOldStr = oldString.length
+// // var strToReplace = str.slice(oldIndex, lofOldStr )
 
-// var temp = str.replace(/strToReplace/g, newString);
+// var temp = str.replace(oldString , newString);
 // return temp
-
-
-// }
-
+//  }
+//===============================================================================
+//14 Write a program that takes string and find exclaimation point in the string.(use charAt and indexOf)
+//15 Write a program that takes string and find if user has given two spaces.
+// wirte the msg "2 spaces found" if there are two spaces in the text
+//=====================================================================
 // var str = prompt("entre the sentence")
 // var newStr=findSpace(str)
 // console.log(newStr)
@@ -440,37 +449,105 @@ var country = ["Afghanistan","Albania","Algeria","Andorra","Angola",
     
 //     var ind = sentence.indexOf("!")
 //     if (ind !== -1){
-//     console.log(" oops found sign of Exclamation found");
+//     console.log("  sign of Exclamation found");
 // }
 // }
 // //==========================================
 
 
 
+
+//===================================================================================
+//17 Write a JavaScript function to format a number up to specified decimal places.
+// Go to the editor Test Data : console.log(decimals(2.100212, 2)); 
+//"2.10" console.log(decimals(2.100212, 3)); //2.100 console.log(decimals(2100, 2)); 
+// 2100.00=========================================================================
+
+
 // var input = +prompt('enter any number')
-// console.log( input)
+// var afterfloat = +prompt (' how much after decimal upto , enter the number')
+// console.log( input+` , `+ afterfloat)
 
-// var value = parseFloat(input)+1;
-
-// console.log( value);
-
-// fiver 3000 Rs/- cuts off 20%
-// var gigQuote = 3000 ;
-// var commission = 20
-//
-
-var input = +prompt('enter any number')
-var afterfloat = +prompt (' after decimal upto how much, enter the number')
-console.log( input+` , `+afterfloat)
-
- format(input , afterfloat)
+//  format(input , afterfloat)
 
 
 
-function format (str , num){
-// var value = parseFloat(str);
-var formateNumber = str.toFixed(num);
-console.log("number after formate = "+ formateNumber )
+// function format (str , num){
+//         // var value = parseFloat(str);
+        
+//         var formateNumber = Number(str).toFixed(num);
+//         console.log("number after formate = "+ formateNumber )
+// }
+//==========================================
+//generate random number
+//========================================
+// var days = [`monday`,`tuesday`,`wednesday`,`thursday`,`friday`,`saturday`]
+// var index =Math.round( ((Math.random()*4)+1))
+// console.log(days[index]);
+// console.log(index);
+//=======================================================================
+//Date and Time
+//=======================================================================
+//================================================================
+//calculate the days of your age
+//==============================================================
+
+// var now = new Date();
+// console.log("Now = " +now);
+
+
+// var dob = new Date('May 01, 1978');
+// console.log(" Date Of Birth = "+ dob);
+
+// var diff = now.getTime() - dob.getTime();
+// console.log("Difference = "+ diff);
+
+// var days =Math.round( diff/(1000*60*60*24));
+// console.log("days = "+ days);
+
+//==================================================================
+//Calculate hours from now till Tomorrow
+//===================================================================
+// var now = new Date();
+// console.log("Now = " +now);
+
+// var tomorow = new Date("Nov 05 2020 9:00:00")
+// console.log("tomorow = " +tomorow);
+
+// var diff = tomorow.getTime() - now.getTime();
+// var hours =Math.round(diff/(1000*60*60))
+// console.log("Remaing Hours = " +hours)
+
+//==============================================================
+//Create a function that tells current time in Y-m-d format.
+//================================================================
+currentTime();
+
+function currentTime(){
+    var now = new Date();
+var year = now.getFullYear();
+var month = now.getMonth()+1;
+var dat = now.getDate()+1;
+
+    console.log(now)
+    console.log(year+"-" + month +"-" + dat)
+    console.log(year+"-" + month +"-" + dat)
+  
 }
+
+//==============================================================
+//Create a function that tells current time from Date object in H:i:s format
+//===================================================================
+timeFunction();
+
+function timeFunction(){
+    var now = new Date()
+    var time = now.getTime()
+    console.log(time)
+}
+
+
+
+
 
 
