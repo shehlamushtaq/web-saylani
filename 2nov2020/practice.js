@@ -521,30 +521,200 @@ var country = ["Afghanistan","Albania","Algeria","Andorra","Angola",
 //==============================================================
 //Create a function that tells current time in Y-m-d format.
 //================================================================
-currentTime();
+// currentTime();
 
-function currentTime(){
-    var now = new Date();
-var year = now.getFullYear();
-var month = now.getMonth()+1;
-var dat = now.getDate()+1;
+// function currentTime(){
+//     var now = new Date();
+// var year = now.getFullYear();
+// var month = now.getMonth()+1;
+// var dat = now.getDate()+1;
 
-    console.log(now)
-    console.log(year+"-" + month +"-" + dat)
-    console.log(year+"-" + month +"-" + dat)
+//     console.log(now)
+//     console.log(year+"-" + month +"-" + dat)
+//     console.log(year+"-" + month +"-" + dat)
   
-}
+// }
+
 
 //==============================================================
-//Create a function that tells current time from Date object in H:i:s format
-//===================================================================
-timeFunction();
+//Create a function that tells current time in Y-m-d format.
+//================================================================
+// currentDate();
 
-function timeFunction(){
-    var now = new Date()
-    var time = now.getTime()
-    console.log(time)
+// function currentDate(){
+//     var now = new Date();
+// var year = now.getFullYear();
+// var month = now.getMonth()+1;
+// var dat = now.getDate();
+
+//     console.log(now)
+//     console.log(year+"-" + month +"-" + dat)
+//     console.log(year+"-" + month +"-" + dat)
+  
+// }
+
+// //==============================================================
+// //Create a function that tells current time from Date object in H:i:s format
+// //===================================================================
+// timeFunction();
+
+// function timeFunction(){
+//     var now = new Date()
+//     // var time = now.getTime()
+//     var hh = now.getHours();
+//     var mm = now.getMinutes();
+//     var ss = now.getSeconds();
+
+
+//     console.log(MakeDoubleDigit(hh) + ':' + MakeDoubleDigit(mm) + ':' + MakeDoubleDigit(ss));
+
+// }
+
+// console.log(ShowTimeInAMPM ("20:25:30"));
+
+// function MakeDoubleDigit (num) {
+
+//     if (num > 9) {
+//         return num;
+//     } else {
+//         return "0" + num;
+//     }
+
+// }
+
+// function ShowTimeInAMPM (timeInHHMMSS) {
+
+//     var arr = timeInHHMMSS.split(':');
+//     var hh = arr[0];
+//     var am_pm = '';
+
+//     if (hh < 12) {
+//         am_pm = 'AM';
+//     } else {
+//         am_pm = 'PM';
+//     }
+
+//     if (hh > 12) {
+//         hh = hh - 12;
+//     }
+
+//     arr[0] = MakeDoubleDigit(hh);
+
+//     var new_time = arr.join(':');
+//     return new_time + ' ' + am_pm;
+         
+// }
+//=================================================================================
+//                              switch statment
+//================================================================================
+// var days = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday']
+// var n = prompt("enter the number the number from 0 -to- 6")
+// switch (days[n]) {
+//     case 'monday':
+//         console.log("This is Monday")
+//         break;
+//     case 'tuesday':
+//         console.log("This is tuesday")
+//         break;
+//     case 'wednesday':
+//         console.log("This is wednesday")
+//         break;
+//     case 'thursday':
+//         console.log("This is thursday")
+//         break;
+//     case 'friday':
+//         console.log("This is friday")
+//         break;
+//     case 'saturday':
+//         console.log("This is saturday")
+//         break;
+//     case 'sunday':
+//         console.log("This is sunday")
+//         break;
+
+//     default:
+//         console.log("you have entered wrong number")
+//         break;
+// }
+
+//================================================================================
+// trafic signal
+//========================================================
+// var signal = prompt("enter the colour red , yellow , green")
+// switch (signal) {
+//     case 'red':
+//         console.log('Stop right now')
+//         break;
+//     case 'green':
+//         console.log('You can go now')
+//         break;
+//     case 'yellow':
+//         console.log('ready to go')
+//         break;
+
+    
+//     default:
+
+//         break;
+// }
+
+//==================================================================================
+                //   calculate the circumference of circle
+//==================================================================================
+// var r = +prompt('enter the radius')
+// var a = circumference(r)
+// console.log(a)
+
+
+// function circumference(num){
+   
+//    var pi = Math.PI//3.14
+//    var c = 2*pi*num
+//    return c
+// }
+//==================================================================================
+        //calculate the area of circle
+//==================================================================================
+
+// var r = +prompt('enter the radius')
+// var a = circleArea(r)
+// console.log( "Area of Circle is = " + a)
+
+
+// function circleArea(num){
+   
+//    var pi = Math.PI //3.14
+//    var rr = Math.pow(num , 2)
+//    var c = (pi*rr).toFixed(2)
+//    return c
+// }
+
+//==================================================================================
+        //program which ask user to enter a number if number
+        // is equal to your variable print "you have won" else again
+        // ask user to enter number
+//==================================================================================
+
+var mynumber = 3;
+var yurNumber = prompt('Enter a number from 1-to-10')
+
+while (mynumber != yurNumber) {
+   var n= prompt('Again Enter a number from 1-to-10')
+
+   if (n==mynumber){
+        console.log('wow you have won')
+        break;
+    }
 }
+
+
+
+
+
+
+
+
+
 
 
 
