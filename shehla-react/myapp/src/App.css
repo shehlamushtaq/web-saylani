@@ -1,4 +1,22 @@
 
+.default{
+  background-color: white;
+}
+
+.on {
+  background-color: yellow !important;
+  color:black;
+  height: 100vh;
+}
+h2{
+  display: inline-block;
+}
+.off{
+  background-color: black;
+  color: white;
+  height: 100vh;
+}
+
 h1{
   text-align: center;
 }

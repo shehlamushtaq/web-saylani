@@ -11,7 +11,7 @@ function Header () {
         <img src={mypic} width="200px"></img>
         <img src={mypic2} width="200px" height="200px" />
         <img src={mypic} width="200px"></img>
-        <img src={mypic2} width="200px" height="200px" /><br />git
+        <img src={mypic2} width="200px" height="200px" /><br />
         <Links/>
         
         
