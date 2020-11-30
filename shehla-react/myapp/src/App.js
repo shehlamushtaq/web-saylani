@@ -18,6 +18,8 @@ import Gate from './components/Gate';
 import Room from './components/Room';
 import React,{useState} from 'react'
 
+import Api from './components/Api';
+import Api2 from './components/Api2';
 
 
 function App() {
@@ -26,7 +28,7 @@ function App() {
  
         
   <div>
-    <h1>My First App</h1>
+    <h1>My App</h1>
        {/* <Header />  
        <SideBar name='shehla'/>
        <Block name='red' />
@@ -43,9 +45,11 @@ function App() {
      <MediaCard title="My Media" body="Lets See My media here" image={f2}/> */}
 {/* <Gate  isOpen={true}/> */}
 
-<Room/>
+{/* <Room title="Shehla"/> */}
 
 
+{/* <Api/> */}
+<Api2/>
 
 
 

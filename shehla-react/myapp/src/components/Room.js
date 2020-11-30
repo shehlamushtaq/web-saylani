@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 
-function Room() {
+function Room(props) {
     const [isLit, setLit] = useState(true)
     let [num, setNum] = useState(0)
 
@@ -21,7 +21,7 @@ function Room() {
             {/* <h2>Temperature = {temprature}'C</h2> */}
 
             <button onClick={() => setTemprature(++temprature)}> +  </button>
-            <h2>Temperature = {temprature}'C</h2>
+            <h2>Temperature {props.title} = {temprature}'C</h2>
             <button onClick={() => setTemprature(--temprature)}> -  </button>
 <br/>
 <br/>
