@@ -7,26 +7,19 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-
-  },
-});
+import CountUp from 'react-countup';
 
 export default function MediaCard({text, value, color}) {
-  const classes = useStyles();
 
   return (
     <Card className="Mycard" style={{backgroundColor:color}}>
       <CardActionArea>
             <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            {text}
+          {text}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            {value}
+          <CountUp start={100000} end={value} />
           </Typography>
         </CardContent>
       </CardActionArea>
